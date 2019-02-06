@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script>
+        //bit düzeyinde karşılastırma yapmak için kullanılır
+        var foo = "bar";
+        // AltGr+ü ~ Not //Shift+3 ^ Xor yada değil // ** üs alma //& and | or
+        console.log(foo.indexOf("r"));//2
+        console.log(foo.indexOf("b"));//0
+        console.log(foo.indexOf("a"));//b
+
+        //karakter koşulu
+        if (~foo.indexOf("r")) {
+            console.log("item in list");
+        } else {
+            console.log("item not in list");
+        }
+
+        //karakter karşılaştırma
+        console.log(foo.includes("b"));//true
+        console.log(foo.includes("w"));//false
+
+    </script>
+</body>
+
+</html>

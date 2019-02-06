@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <p id="id"></p>
+    <script>
+        var car = {
+            type: "Fiat",
+            model: "500",
+            color: "white",
+            fullProperties: function () {
+                return "type : " + this.type + " model : " + this.model + "color : " + this.color;
+            }
+        };
+        //document.getElementById('id').innerHTML = "the car type is " + car.type
+        //    + "the car model is " + car.model + "and it's color is " + car.color;
+        document.getElementById('id').innerHTML = car.fullProperties() ;
+    </script>
+</body>
+
+</html>
