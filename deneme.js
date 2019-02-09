@@ -1,54 +1,50 @@
-//array can created two difference ways
-//1 way using [] and other way using new Array() keyword
-var cars1 = [
-    "Saab",
-    "Volvo",
-    "Fiat"
-];
+// //Array Iteration
+// var txt = "";
+// var numbers = [45, 4, 9, 16, 25];
+// //using forEach
+// numbers.forEach(myFunction);
 
-var cars2 = new Array("Mercedes", "BMW", "Audi");
+// function myFunction(value, index, array) {
+//     txt = txt + value + "<br>" ;
+// }
 
-//Acces the element of array
-var name = cars1[0];
-//document.getElementById("myDiv").innerHTML = cars[0] ;
+// console.log(txt);
 
-//changing an array element
-cars1[0] = "Opel";
-//for the access the full array you can using the name array like cars
-//Arrays are objects
-//Array elements can be objects
-cars1[0] = new Date;
+// //Array map
+// var numbers1 = [45, 4, 9, 16, 25];
+// var numbers2 = numbers1.map(my2Function);
 
-cars1[1] = function () {
-    return "hello world";
-}
+// function my2Function(value, index, array){
+//     return value * 2 ;
+// }
 
-cars1[2] = cars2;
+// console.log(numbers2);
 
-//you can some methods with array properties like cars.length or cars.sort()
+//using filter
+// var numbers = [45, 4, 9, 16, 25];
+// var over18 = numbers.filter(myFunction);
 
-//accessing the last array element
-var last = cars2[cars2.length - 1];
+// console.log(over18);
 
-//looping array elements
-var fruits, text, fLen, i;
-fruits = ["aplle", "orange", "strawberry"];
-fLen = fruits.length;
+// function myFunction(value, index, array) {
+//     return value>18 ;
+// }
 
-text = "<ul>";
-for (i=0; i<fLen; i++) {
-    text += "<>"
-}
+//using Array reduce
+var numbers1 = [45, 4, 9, 16, 25];
+// var sum = numbers1.reduce(myFunction);
+// console.log(sum);
 
+// function myFunction(total, value, index, array) {
+//     return total + value ;
+// }
 
-
-
+// var sum = numbers1.reduce(myFunction, 1000);
+// console.log(sum);//returns 1099
 
 
+// function myFunction(total, value, index, array){
+//     return total + value ;
+// }
 
-
-
-
-
-
-
+//using array.every();
